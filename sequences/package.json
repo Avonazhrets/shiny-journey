@@ -29,6 +29,6 @@
     "prettier": "^1.13.5"
   },
   "dependencies": {
-    "jquery": "^2.2.4"
+    "jquery": "^3.5.0"
   }
 }
