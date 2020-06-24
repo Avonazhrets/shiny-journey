@@ -1,0 +1,111 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<meta charset = 'utf-8'/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Put page title here -->
+	<title>Это название в шапке</title>
+	
+	<link rel='stylesheet' href='../css/eulerface_layout.css' media='screen' />
+	<link rel='stylesheet' href='../css/eulerface_inline.css' media='screen' />
+	<link rel='stylesheet' href='../css/eulerface_select.css' media='screen' />
+</head>
+
+<body lang = 'ru'>
+	<header id = 'mainBar'>
+		<nav id = 'siteNav'>
+			<h1 id = 'logo'>f</h1>
+		</nav>
+		<nav id = 'lessonNav'>
+		</nav>
+	</header>
+
+	<article class = 'articleContent'>
+		<header id = 'articleHeader'>
+			<!-- Put page title here -->
+			<h1 id = 'articleTitle'>Это заголовок страницы</h1>
+		</header>
+	
+		<figure class = 'visual'>
+			<figure class = 'visualFlex'>
+				<!-- put figures here -->
+				<div class = 'aspect'>
+					<div class = 'aspectHolder'></div>
+					<figure id = 'plot3d' class = 'subVisual' style = 'background: orange'></figure>
+				</div>				
+				<div class = 'aspect'>
+					<div class = 'aspectHolder'></div>
+					<figure id = 'plot2d' class = 'subVisual' style = 'background: red'></figure>
+				</div>
+			</figure>
+			
+			<figcaption class = 'visualDesc'>
+				Это подпись к графикам
+			</figcaption>
+		</figure>
+		
+		<!-- Make as many of these sections as you need -->
+		<section class = 'articlePage'>
+			<h2 class = 'sectionTitle'>
+				<!-- Здесь пока пусто -->
+			</h2>
+			
+			<div class = 'dynamicBlock'>
+				<div class = 'control'>
+					<p>
+						Это общая часть условия ("Вычислить интеграл")
+					</p>
+					<select>
+						<!-- Здесь пока пусто -->
+					</select>
+				</div>
+				<div class = 'controlled'>
+					<div id = 'V81A'>
+						<p>
+							Это решение задачи 1 с формулой:
+							$$ \iiint\limits_{T} f(x, y, z) dxdydz $$
+						</p>
+					</div>
+					
+					<div id = 'V82B'>
+						<p>
+							Это решение задачи 2 с другой формулой:
+							\( \iiint \) &mdash; значок тройного интеграла
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class = 'bodyText'>
+				<p>
+					Это общий текст для всех задач
+				</p>
+				
+				<aside class = 'sideNote'>
+					<p>
+						Сюда можно вставить ссылки
+					</p>
+				</aside>
+			</div>
+		</section>
+	</article>
+	
+	
+    <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+	<script type='text/x-mathjax-config'>
+		MathJax.Hub.Config({
+			skipStartupTypeset: true,
+			tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+			'HTML-CSS': { linebreaks: { automatic: true, width: '75% container' } }
+		});
+    </script>
+	<script src = '../js/eulerface.js'></script>
+	<script src = '../js/select.js'></script>
+	<script src = 'template_script.js'></script>
+</body>
+
+</html>

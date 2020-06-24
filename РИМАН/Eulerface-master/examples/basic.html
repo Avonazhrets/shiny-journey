@@ -1,0 +1,40 @@
+﻿<!doctype html>
+
+<html lang="en">
+<head>
+	<title></title>
+	<style>
+		#plot_area {
+			margin: 0px;
+			overflow: hidden;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			background: white;
+		}
+	</style>
+</head>
+
+<body>
+	<figure class="panel" id="plot_area"></figure>
+	
+	<script type="text/javascript" src="../loader.js"></script>
+	<script type="text/javascript">
+		runGrafar(function() {
+			var pan = new grafar.Panel(document.getElementById('plot_area')).setAxes(['x', 'y']);
+                    console.log('hello');
+            var graph = new grafar.Object()
+                .constrain({what: 'x', maxlen: 300, as: grafar.seq(-2, 2, 'x')})
+                .constrain({what: 'y', as: function(data, l) {
+                    console.log('hello');
+                    for (var i = 0; i < l; i++)
+                        data.y[i] = 2;//Math.sin(data.x[i]) * data.x[i] * data.x[i];
+                })
+                .pin(pan);
+            console.log(graph);
+		}, '../');
+	</script>
+</body>
+</html>

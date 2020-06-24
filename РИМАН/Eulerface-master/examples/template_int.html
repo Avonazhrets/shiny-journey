@@ -1,0 +1,143 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<meta charset = 'utf-8'/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Put page title here -->
+	<title>Это название в шапке</title>
+	
+	<link rel='stylesheet' href='../css/eulerface_layout.css' media='screen' />
+	<link rel='stylesheet' href='../css/eulerface_inline.css' media='screen' />
+	<link rel='stylesheet' href='../css/eulerface_select.css' media='screen' />
+</head>
+
+<body lang = 'ru'>
+	<header id = 'mainBar'>
+		<nav id = 'siteNav'>
+			<h1 id = 'logo'>f</h1>
+		</nav>
+		<nav id = 'lessonNav'>
+		</nav>
+	</header>
+
+	<article class = 'articleContent'>
+		<header id = 'articleHeader'>
+			<!-- Put page title here -->
+			<h1 id = 'articleTitle'>Это заголовок страницы</h1>
+		</header>
+	
+		<figure class = 'visual'>
+			<figure class = 'visualFlex'>
+				<!-- put figures here -->
+				<div class = 'aspect'>
+					<div class = 'aspectHolder'></div>
+					<figure id = 'plot3d' class = 'subVisual' style = 'background: orange'></figure>
+				</div>				
+				<div class = 'aspect'>
+					<div class = 'aspectHolder'></div>
+					<figure id = 'plot2d' class = 'subVisual' style = 'background: red'></figure>
+				</div>
+			</figure>
+			
+			<figcaption class = 'visualDesc'>
+				Это подпись к графикам
+			</figcaption>
+		</figure>
+		
+		<!-- Make as many of these sections as you need -->
+		<section class = 'articlePage'>
+			<h2 class = 'sectionTitle'>
+				<!-- Здесь пока пусто -->
+			</h2>
+			
+			<div class = 'dynamicBlock'>
+				<div class = 'control'>
+					<p>
+						Найти объем тела, ограниченного следующими поверхностями:
+					</p>
+					<select>
+						<option value = '38-2-a'>38.2(а)</option>
+						<option value = '38-2-b'>38.2(б)</option>
+					</select>
+				</div>
+				<div class = 'controlled'>
+					<div id = 'solution-38-2-a'>
+						<p>
+							Это решение задачи 38.2(а) с формулой:
+							$$ \frac{x^2}{a^2}+ \frac{y^2}{b^2}=1, z=\frac{c}{a}x, z=0, a = 1, b = 2, c = 2$$ 
+						</p>
+					</div>
+					<div id = 'solution-38-2-b'>
+						<p>
+							Это решение задачи 38.2(b) с формулой:
+							$$ x^2+y^2=R^2, \frac{x}{R}+\frac{z}{H}=1, \frac{x}{R}-\frac{z}{H}=-1,$$ $$ y=0, z=0$$
+		                    $$ r = 1, h = 1$$
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class = 'bodyText'>
+				<p>
+					Это общий текст для всех задач
+				</p>
+				
+				<aside class = 'sideNote'>
+					<p>
+						Сюда можно вставить ссылки
+					</p>
+				</aside>
+			</div>
+		</section>
+		
+		<section class = 'articlePage'>
+			<h2 class = 'sectionTitle'>
+				<!-- Здесь пока пусто -->
+			</h2>
+			
+			<div class = 'dynamicBlock'>
+				<div class = 'control'>
+					<p>
+						Различными способами расставить пределы в следующем тройном интеграле:
+					</p>
+					<select>
+						<option value = '65-3-a'>65.3(a)</option>
+					</select>
+				</div>
+				<div class = 'controlled'>
+					<div id = 'solution-65-3-a'>
+						<p>
+							Это решение задачи 65.3(а) с формулой:
+							$$\int\limits_{0}^{1} dx \int\limits_{0}^{1-x} dy \int\limits_{0}^{x+y} f(x,y,z) dz$$
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class = 'bodyText'>
+				<p>
+					Это общий текст для всех задач
+				</p>
+				
+				<aside class = 'sideNote'>
+					<p>
+						Сюда можно вставить ссылки
+					</p>
+				</aside>
+			</div>
+		</section>
+		
+	</article>
+	
+	<script src = '../js/eulerface.js'></script>
+	<script src = '../js/select.js'></script>
+	
+	<script src = 'problemlist.js'></script>
+	<script src = 'template_script.js'></script>
+</body>
+
+</html>
